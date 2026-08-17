@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  /* Cockpit — data, forms, legal text: sober, high-contrast */
+  --cockpit-bg: #f5f4f1;
+  --cockpit-surface: #ffffff;
+  --cockpit-ink: #14161a;
+  --cockpit-muted: #5b5f66;
+  --cockpit-border: #e2e0da;
+
+  /* Livrée — nav, hero, CTAs, brand moments: vivid, diagonal, alive */
+  --livree-anthracite: #14161a;
+  --livree-anthracite-2: #1e2127;
+  --race-orange: #ff5a1f;
+  --race-orange-dark: #d9440f;
+  --ragas-navy: #0c1b33;
+  --ragas-gold: #c9a227;
+
+  --font-cockpit: var(--font-inter);
+  --font-livree: var(--font-oswald);
+  --font-display: var(--font-anton);
+}
+
+@theme inline {
+  --color-cockpit-bg: var(--cockpit-bg);
+  --color-cockpit-surface: var(--cockpit-surface);
+  --color-cockpit-ink: var(--cockpit-ink);
+  --color-cockpit-muted: var(--cockpit-muted);
+  --color-cockpit-border: var(--cockpit-border);
+
+  --color-anthracite: var(--livree-anthracite);
+  --color-anthracite-2: var(--livree-anthracite-2);
+  --color-race-orange: var(--race-orange);
+  --color-race-orange-dark: var(--race-orange-dark);
+  --color-ragas-navy: var(--ragas-navy);
+  --color-ragas-gold: var(--ragas-gold);
+
+  --font-cockpit: var(--font-cockpit);
+  --font-livree: var(--font-livree);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--cockpit-bg);
+  color: var(--cockpit-ink);
+  font-family: var(--font-cockpit), Arial, sans-serif;
+}
+
+/* ---- Livrée signature components ---- */
+
+.diagonal-divider {
+  position: relative;
+  height: 5rem;
+  overflow: hidden;
+}
+
+.diagonal-divider svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.grid-stripes {
+  background-image: repeating-linear-gradient(
+    135deg,
+    var(--race-orange) 0px,
+    var(--race-orange) 2px,
+    transparent 2px,
+    transparent 18px
+  );
+}
+
+.font-livree {
+  font-family: var(--font-livree), sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-count {
+  animation: count-up 0.5s ease-out;
+}
+
+::selection {
+  background: var(--race-orange);
+  color: white;
+}
