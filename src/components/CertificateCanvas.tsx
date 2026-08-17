@@ -51,13 +51,32 @@ export default function CertificateCanvas({
     ctx.fill();
     ctx.restore();
 
+    // Marque : boucle de circuit ouverte + chevron road book (même dessin que src/components/Logo.tsx).
+    ctx.save();
+    ctx.translate(64, 44);
+    ctx.beginPath();
+    ctx.arc(0, 0, 16, 0.35 * Math.PI, 2.3 * Math.PI);
+    ctx.strokeStyle = "#ffffff";
+    ctx.lineWidth = 4;
+    ctx.lineCap = "round";
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(6, -14);
+    ctx.lineTo(17, -9);
+    ctx.lineTo(6, -4);
+    ctx.lineTo(9, -9);
+    ctx.closePath();
+    ctx.fillStyle = "#ff5a1f";
+    ctx.fill();
+    ctx.restore();
+
     ctx.fillStyle = "#ffffff";
     ctx.font = "600 22px Inter, Arial, sans-serif";
-    ctx.fillText("LA DÉFENSE MONDIALE", 64, 76);
+    ctx.fillText("LA DÉFENSE MONDIALE", 94, 51);
 
     ctx.fillStyle = "#c9a227";
     ctx.font = "500 18px Inter, Arial, sans-serif";
-    ctx.fillText("CERTIFICAT DE PERFORMANCE — PER GRAND PRIX", 64, 106);
+    ctx.fillText("CERTIFICAT DE PERFORMANCE — CIRCUIT PATRIMONIAL", 64, 106);
 
     ctx.fillStyle = "#ffffff";
     ctx.font = "700 52px Inter, Arial, sans-serif";
@@ -96,7 +115,7 @@ export default function CertificateCanvas({
     ctx.font = "400 15px Inter, Arial, sans-serif";
     ctx.fillStyle = "rgba(255,255,255,0.45)";
     ctx.fillText(
-      "Simulation non contractuelle — perdefensemondiale.fr",
+      "Simulation non contractuelle — circuitpatrimonial.fr",
       64,
       HEIGHT - 36
     );
@@ -114,7 +133,7 @@ export default function CertificateCanvas({
       {pngUrl && (
         <a
           href={pngUrl}
-          download="certificat-per-grand-prix.png"
+          download="certificat-circuit-patrimonial.png"
           className="inline-block -skew-x-3 bg-anthracite px-5 py-3 font-livree text-sm font-bold uppercase tracking-wide text-white hover:bg-anthracite-2"
         >
           <span className="inline-block skew-x-3">Télécharger le certificat</span>

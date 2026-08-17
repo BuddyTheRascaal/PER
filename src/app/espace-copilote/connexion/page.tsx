@@ -33,7 +33,7 @@ export default function ConnexionPage() {
   return (
     <div className="mx-auto max-w-md px-5 py-16">
       <p className="font-livree text-sm uppercase tracking-[0.25em] text-race-orange">
-        Espace Copilote
+        Rallye Copilotes
       </p>
       <h1 className="mt-2 font-display text-3xl uppercase text-anthracite">Connexion</h1>
 

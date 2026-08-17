@@ -11,7 +11,7 @@ function num(value: string | null, fallback: number): number {
   return Number.isFinite(n) && n > 0 ? n : fallback;
 }
 
-const FALLBACK_URL = "https://perdefensemondiale.fr/certificat";
+const FALLBACK_URL = "https://circuitpatrimonial.fr/certificat";
 
 export default function CertificateView() {
   const params = useSearchParams();

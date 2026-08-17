@@ -3,10 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Logo from "@/components/Logo";
 
 const LINKS = [
-  { href: "/simulateur", label: "Le Simulateur" },
-  { href: "/copilotes", label: "Programme Copilotes" },
+  { href: "/simulateur", label: "Le Circuit" },
+  { href: "/copilotes", label: "Le Rallye Copilotes" },
   { href: "/a-propos", label: "À propos" },
 ];
 
@@ -17,9 +18,9 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-anthracite text-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-        <Link href="/" className="flex items-center gap-2 font-livree text-lg font-bold uppercase tracking-wide">
-          <span className="-skew-x-6 rounded bg-race-orange px-2 py-1 text-white">PER</span>
-          <span>Grand Prix</span>
+        <Link href="/" className="flex items-center gap-2.5 font-livree text-lg font-bold uppercase tracking-wide">
+          <Logo className="h-8 w-8" tone="light" />
+          <span>Circuit Patrimonial</span>
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex">

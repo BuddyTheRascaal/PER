@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -6,7 +7,10 @@ export default function Footer() {
       <div className="grid-stripes h-1.5 w-full" />
       <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-4">
         <div>
-          <p className="font-livree text-lg font-bold uppercase tracking-wide text-white">PER Grand Prix</p>
+          <p className="flex items-center gap-2 font-livree text-lg font-bold uppercase tracking-wide text-white">
+            <Logo className="h-7 w-7" tone="light" />
+            Circuit Patrimonial
+          </p>
           <p className="mt-3 text-sm leading-relaxed">
             Une initiative La Défense Mondiale, en partenariat avec Ragas Assurances
             et Europa Assurances (Monaco).
@@ -14,7 +18,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-livree text-sm font-bold uppercase tracking-wide text-white">Le PER</p>
+          <p className="font-livree text-sm font-bold uppercase tracking-wide text-white">Le Circuit</p>
           <ul className="mt-3 space-y-2 text-sm">
             <li><Link href="/simulateur" className="hover:text-race-orange">Simulateur</Link></li>
             <li><Link href="/certificat" className="hover:text-race-orange">Certificat de performance</Link></li>
@@ -23,9 +27,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <p className="font-livree text-sm font-bold uppercase tracking-wide text-white">Copilotes</p>
+          <p className="font-livree text-sm font-bold uppercase tracking-wide text-white">Le Rallye</p>
           <ul className="mt-3 space-y-2 text-sm">
-            <li><Link href="/copilotes" className="hover:text-race-orange">Le programme</Link></li>
+            <li><Link href="/copilotes" className="hover:text-race-orange">Programme Copilotes</Link></li>
             <li><Link href="/espace-copilote" className="hover:text-race-orange">Espace copilote</Link></li>
           </ul>
         </div>

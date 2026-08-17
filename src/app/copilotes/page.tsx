@@ -4,21 +4,21 @@ import Leaderboard from "@/components/Leaderboard";
 import { getMonthlyLeaderboard } from "@/lib/leaderboard";
 
 export const metadata = {
-  title: "Programme Copilotes — PER Grand Prix",
+  title: "Rallye Copilotes — Circuit Patrimonial",
 };
 
 const MECANIQUE = [
   {
-    title: "Vous partagez votre lien",
-    text: "Un lien de tracking unique, généré à l'inscription. Diffusez-le sur vos supports, en clientèle, sur un stand.",
+    title: "Vous partagez votre road book",
+    text: "Un lien de tracking unique, votre feuille de route personnelle générée à l'inscription. Diffusez-le sur vos supports, en clientèle, sur un stand.",
   },
   {
-    title: "Vos contacts simulent",
-    text: "Vos prospects utilisent le simulateur PER Grand Prix. Chaque lead qualifié vous est automatiquement attribué.",
+    title: "Vos contacts prennent le Circuit",
+    text: "Vos prospects utilisent le simulateur Circuit Patrimonial. Chaque lead qualifié vous est automatiquement attribué à l'arrivée.",
   },
   {
-    title: "Vous suivez, vous êtes rémunéré",
-    text: "Dashboard en temps réel : clics, leads, classement mensuel, historique de commissions.",
+    title: "Vous suivez le chrono, vous êtes rémunéré",
+    text: "Dashboard en temps réel : clics, leads, classement scratch mensuel, historique de commissions.",
   },
 ];
 
@@ -38,22 +38,24 @@ export default function CopilotesPage() {
       <section className="bg-anthracite text-white">
         <div className="mx-auto max-w-6xl px-5 py-20">
           <p className="font-livree text-sm uppercase tracking-[0.3em] text-race-orange">
-            Programme Copilotes
+            Le Rallye Copilotes
           </p>
           <h1 className="mt-4 max-w-2xl font-display text-5xl uppercase leading-[0.95] md:text-6xl">
             Devenez copilote de la stratégie retraite de votre réseau.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/80">
             Experts-comptables, agents immobiliers, courtiers, family offices :
-            si votre réseau vous fait confiance sur le patrimoine, le programme
+            si votre réseau vous fait confiance sur le patrimoine, le Rallye
             Copilotes transforme cette confiance en revenu récurrent, sans
-            sortir de votre métier.
+            sortir de votre métier. Un pilote a besoin d&apos;un copilote pour
+            lire la route — c&apos;est le seul rôle du motorsport que ce
+            programme emprunte vraiment.
           </p>
           <Link
             href="/espace-copilote/inscription"
             className="mt-8 inline-block -skew-x-3 bg-race-orange px-7 py-4 font-livree font-bold uppercase tracking-wide text-white hover:bg-race-orange-dark"
           >
-            <span className="inline-block skew-x-3">Rejoindre le programme</span>
+            <span className="inline-block skew-x-3">Rejoindre le Rallye Copilotes</span>
           </Link>
         </div>
       </section>
@@ -62,7 +64,7 @@ export default function CopilotesPage() {
 
       <section className="mx-auto max-w-6xl px-5 py-16">
         <h2 className="font-livree text-sm uppercase tracking-[0.25em] text-cockpit-muted">
-          La mécanique
+          La feuille de route
         </h2>
         <div className="mt-6 grid gap-6 md:grid-cols-3">
           {MECANIQUE.map((step, i) => (
@@ -101,7 +103,7 @@ export default function CopilotesPage() {
       <section className="bg-cockpit-surface py-16">
         <div className="mx-auto max-w-6xl px-5">
           <h2 className="font-livree text-sm uppercase tracking-[0.25em] text-cockpit-muted">
-            Classement copilotes — ce mois-ci
+            Classement scratch — ce mois-ci
           </h2>
           <p className="mt-2 max-w-xl text-sm text-cockpit-muted">
             Classement anonymisé, mis à jour en continu à partir des leads
@@ -129,7 +131,7 @@ export default function CopilotesPage() {
               <li>— Argumentaire de présentation courte (2 min)</li>
             </ul>
             <a
-              href="mailto:copilotes@perdefensemondiale.fr?subject=Demande%20de%20kit%20de%20stand%20Copilote"
+              href="mailto:copilotes@circuitpatrimonial.fr?subject=Demande%20de%20kit%20de%20stand%20Copilote"
               className="mt-5 inline-block -skew-x-3 bg-anthracite px-5 py-3 font-livree text-sm font-bold uppercase tracking-wide text-white hover:bg-anthracite-2"
             >
               <span className="inline-block skew-x-3">Demander mon kit</span>

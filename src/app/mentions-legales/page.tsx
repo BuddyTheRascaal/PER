@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Mentions légales — PER Grand Prix",
+  title: "Mentions légales — Circuit Patrimonial",
 };
 
 function Champ({ label }: { label: string }) {
@@ -22,7 +22,7 @@ export default function MentionsLegalesPage() {
       <section className="mt-10 space-y-3 text-sm leading-relaxed text-cockpit-muted">
         <h2 className="font-livree text-lg font-bold uppercase tracking-wide text-anthracite">Éditeur du site</h2>
         <p>
-          Le site PER Grand Prix est édité par <Champ label="raison sociale" />,{" "}
+          Le site Circuit Patrimonial est édité par <Champ label="raison sociale" />,{" "}
           <Champ label="forme juridique" /> au capital de <Champ label="montant" />,
           immatriculée au RCS de <Champ label="ville" /> sous le numéro{" "}
           <Champ label="SIREN" />, dont le siège social est situé{" "}
@@ -64,7 +64,7 @@ export default function MentionsLegalesPage() {
           Nature non contractuelle des simulations
         </h2>
         <p>
-          Les simulations réalisées via le simulateur PER Grand Prix (économie
+          Les simulations réalisées via le simulateur Circuit Patrimonial (économie
           d&apos;impôt, capital projeté, position sur la grille fiscale) sont
           fournies à titre purement indicatif et pédagogique. Elles reposent
           sur des hypothèses simplifiées (barème de référence, plafond de

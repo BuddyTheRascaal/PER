@@ -24,9 +24,9 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-  title: "PER Grand Prix — La Défense Mondiale",
+  title: "Circuit Patrimonial — La Défense Mondiale",
   description:
-    "Votre retraite mérite une stratégie de course, pas une ligne droite. Simulez votre PER et prenez position sur la grille fiscale.",
+    "Votre retraite mérite une stratégie de course, pas une ligne droite. Simulez votre PER sur le Circuit, ou rejoignez le Rallye Copilotes.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

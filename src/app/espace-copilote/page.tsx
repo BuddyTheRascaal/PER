@@ -6,7 +6,7 @@ import PositionBadge from "@/components/PositionBadge";
 import LogoutButton from "@/components/LogoutButton";
 
 export const metadata = {
-  title: "Espace Copilote — PER Grand Prix",
+  title: "Espace Copilote — Circuit Patrimonial",
 };
 
 export default async function EspaceCopilotePage() {
@@ -14,14 +14,14 @@ export default async function EspaceCopilotePage() {
   if (!session) redirect("/espace-copilote/connexion");
 
   const stats = getCopiloteStats(session.copiloteCode);
-  const trackingUrl = `https://perdefensemondiale.fr/?ref=${session.copiloteCode}`;
+  const trackingUrl = `https://circuitpatrimonial.fr/?ref=${session.copiloteCode}`;
 
   return (
     <div className="mx-auto max-w-5xl px-5 py-14">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <p className="font-livree text-sm uppercase tracking-[0.25em] text-race-orange">
-            Cockpit copilote
+            Rallye Copilotes — Carnet de route
           </p>
           <h1 className="mt-1 font-display text-4xl uppercase text-anthracite">
             Bonjour {session.nom.split(" ")[0]}
@@ -46,7 +46,7 @@ export default async function EspaceCopilotePage() {
         <div className="flex items-center gap-3 rounded-lg border border-cockpit-border bg-anthracite p-5">
           <PositionBadge position={stats.rangMensuel ?? 0} tone="orange" />
           <div>
-            <p className="text-xs uppercase tracking-wide text-white/60">Rang mensuel</p>
+            <p className="text-xs uppercase tracking-wide text-white/60">Classement scratch</p>
             <p className="font-display text-xl text-white">
               {stats.rangMensuel ? `${stats.rangMensuel}e` : "—"}
             </p>
@@ -56,7 +56,7 @@ export default async function EspaceCopilotePage() {
 
       <div className="mt-8 rounded-lg border border-cockpit-border bg-cockpit-surface p-6">
         <p className="font-livree text-sm font-bold uppercase tracking-wide text-anthracite">
-          Votre lien de tracking
+          Votre lien de road book
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-3">
           <code className="rounded bg-cockpit-bg px-3 py-2 text-sm text-anthracite">{trackingUrl}</code>
@@ -67,7 +67,7 @@ export default async function EspaceCopilotePage() {
           votre compte pendant 30 jours.
         </p>
         <a
-          href="mailto:copilotes@perdefensemondiale.fr?subject=Demande%20de%20kit%20de%20stand%20Copilote"
+          href="mailto:copilotes@circuitpatrimonial.fr?subject=Demande%20de%20kit%20de%20stand%20Copilote"
           className="mt-4 inline-block -skew-x-3 bg-anthracite px-5 py-2.5 font-livree text-sm font-bold uppercase tracking-wide text-white hover:bg-anthracite-2"
         >
           <span className="inline-block skew-x-3">Recevoir mes supports de com</span>

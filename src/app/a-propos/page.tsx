@@ -1,7 +1,7 @@
 import DiagonalDivider from "@/components/DiagonalDivider";
 
 export const metadata = {
-  title: "À propos — PER Grand Prix",
+  title: "À propos — Circuit Patrimonial",
 };
 
 export default function AProposPage() {
@@ -49,10 +49,17 @@ export default function AProposPage() {
               marketing : c&apos;est une manière de travailler. Précision des
               chiffres, préparation de chaque paramètre, capacité à ajuster une
               stratégie en course — ce sont les mêmes réflexes qui structurent
-              nos préconisations patrimoniales. PER Grand Prix reprend cette
-              métaphore là où elle a du sens : pour rendre lisible une
-              trajectoire d&apos;épargne longue, jamais pour habiller les
-              chiffres réglementaires.
+              nos préconisations patrimoniales. Circuit Patrimonial reprend
+              cette métaphore là où elle a du sens, et respecte la distinction
+              entre les deux disciplines : le <strong className="text-cockpit-ink">Circuit</strong>,
+              c&apos;est votre stratégie personnelle — une course en solo, votre
+              position sur la grille fiscale. Le <strong className="text-cockpit-ink">Rallye
+              Copilotes</strong> est autre chose : un équipage, un pilote et un
+              copilote qui lit la feuille de route ensemble. C&apos;est
+              d&apos;ailleurs la seule discipline motorsport où le mot
+              &laquo;&nbsp;copilote&nbsp;&raquo; existe vraiment — jamais pour
+              habiller les chiffres réglementaires, toujours pour rendre
+              lisible une trajectoire d&apos;épargne longue.
             </p>
           </div>
 

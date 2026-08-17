@@ -1,8 +1,23 @@
-# PER Grand Prix
+# Circuit Patrimonial
 
 Plateforme vitrine + réseau d'affiliés pour La Défense Mondiale, construite
 avec Next.js (App Router), TypeScript et Tailwind CSS v4, conformément au
-brief `PER Grand Prix v1.0`.
+brief `PER Grand Prix v1.0` (rebaptisé **Circuit Patrimonial** — voir
+"Identité de marque" ci-dessous).
+
+## Identité de marque
+
+Le site porte deux disciplines motorsport distinctes, choisies pour rester
+justes :
+
+- **Le Circuit** — la stratégie personnelle de l'utilisateur : une course en
+  solo, sa position sur la grille fiscale (`/`, `/simulateur`, `/certificat`).
+- **Le Rallye Copilotes** — le réseau d'apporteurs d'affaires (`/copilotes`,
+  `/espace-copilote`). En rallye, le pilote roule avec un copilote qui lit la
+  feuille de route ; en circuit, il n'y en a pas. C'est la seule discipline
+  où le mot « copilote » existe vraiment, d'où la distinction de vocabulaire
+  dans l'UI (road book, carnet de route, classement scratch...) plutôt que
+  les termes circuit (grille de départ, Grand Prix) utilisés côté simulateur.
 
 ## Stack
 

@@ -7,7 +7,7 @@ export default function Leaderboard({ entries }: { entries: LeaderboardEntry[] }
   if (entries.length === 0) {
     return (
       <div className="rounded-lg border border-cockpit-border bg-cockpit-surface p-8 text-center text-sm text-cockpit-muted">
-        La grille de départ du mois s&apos;ouvre bientôt — soyez le premier copilote inscrit.
+        Le classement scratch du mois n&apos;a pas encore de leader — soyez le premier copilote inscrit.
       </div>
     );
   }

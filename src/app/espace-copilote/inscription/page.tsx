@@ -35,9 +35,9 @@ export default function InscriptionPage() {
   return (
     <div className="mx-auto max-w-md px-5 py-16">
       <p className="font-livree text-sm uppercase tracking-[0.25em] text-race-orange">
-        Programme Copilotes
+        Rallye Copilotes
       </p>
-      <h1 className="mt-2 font-display text-3xl uppercase text-anthracite">Rejoindre le programme</h1>
+      <h1 className="mt-2 font-display text-3xl uppercase text-anthracite">Rejoindre le Rallye</h1>
       <p className="mt-2 text-sm text-cockpit-muted">
         Créez votre compte pour obtenir votre lien de tracking unique et
         accéder à votre dashboard.

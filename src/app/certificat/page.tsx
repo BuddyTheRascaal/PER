@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import CertificateView from "@/components/CertificateView";
 
 export const metadata = {
-  title: "Certificat de performance — PER Grand Prix",
+  title: "Certificat de performance — Circuit Patrimonial",
 };
 
 export default function CertificatPage() {
